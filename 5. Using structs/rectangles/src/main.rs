@@ -67,6 +67,7 @@ fn main3() {
     println!("rect1 is {rect1:?}");
 }
 
+// Assocuated functions:
 impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
