@@ -47,4 +47,19 @@ fn main() {
             }
         }
     }
+
+    // Iterating over strings:
+    {
+        for c in "test".chars() {
+            println!("{c}");
+        }
+
+        for c in "Зд".chars() {
+            println!("{c}");
+        }
+
+        for c in "はじめまして".chars() {
+            println!("{c}");
+        }
+    }
 }
