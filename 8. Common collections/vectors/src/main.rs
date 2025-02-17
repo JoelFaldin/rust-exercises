@@ -38,9 +38,25 @@ fn main() {
 
     // Reading nonexistant elements in a vector:
     {
-        let v = vec![1, 2, 3, 4, 5];
+        let _v = vec![1, 2, 3, 4, 5];
 
-        let does_not_exists = &v[100];
-        let does_not_exists = v.get(100);
+        // let _does_not_exists = &v[100];
+        // let _does_not_exists = v.get(100);
+    }
+    
+    // Iterating over values in a vector:
+    {
+        let v = vec![100, 32, 57];
+        for i in &v {
+            println!("{i}");
+        }
+    }
+
+    // Iteraing over mutable references:
+    {
+        let mut v = vec![100, 32, 57];
+        for i in &mut v {
+            *i += 50;
+        }
     }
 }
