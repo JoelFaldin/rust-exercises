@@ -62,6 +62,7 @@ fn main() {
 
     // Using enum to Store multiple types:
     {
+        #[allow(dead_code)]
         enum SpreadsheetCell {
             Int(i32),
             Float(f64),
