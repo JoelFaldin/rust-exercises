@@ -25,5 +25,26 @@ fn main() {
 
             println!("{s3}");
         }
+
+        // Concatenating strings:
+        {
+            let s1 = String::from("hello");
+            let s2 = String::from(" world!");
+            let s3 = s1 + &s2;
+
+            println!("{s3}");
+        }
+
+        {
+            // Alternative (using format!):
+            {
+                let s1 = String::from("hello");
+                let s2 = String::from("rust");
+                let s3 = String::from("world!");
+
+                let s4 = format!("{s1} {s2} {s3}");
+                println!("{s4}");
+            }
+        }
     }
 }
