@@ -1,5 +1,5 @@
 [workspace]
-members = [ "8. Common collections/strings",
+members = [
     # "1. Getting started/hello_cargo",
     # "2. Guessing game/guessing_game",
     # "3. Common programming concepts/branches",
@@ -25,6 +25,8 @@ members = [ "8. Common collections/strings",
     # "6. Enums and pattern matching/if-let-match",
     # "6. Enums and pattern matching/match-control-flow",
     # "7. Packages, crates and modules/restaurant",
-    "8. Common collections/vectors",
-    "8. Common collections/strings",
+    # "8. Common collections/vectors",
+    # "8. Common collections/strings",
+    # "8. Common collections/hash_map",
+    "8. Common collections/median-mode",
 ]
