@@ -17,3 +17,15 @@ fn main() {
         },
     };
 }
+
+fn _main2() {
+    let _greeting_file_result = File::open("test.txt").unwrap_or_else(|error| {
+        if error.kind() == ErrorKind::NotFound {
+            File::create("test.txt").unwrap_or_else(|error| {
+                panic!("Error creating the file: {:?}", error);
+            })
+        } else {
+            panic!("Problem opening the file: {error:?}");
+        }
+    });
+}
