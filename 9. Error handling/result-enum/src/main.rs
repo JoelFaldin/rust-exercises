@@ -29,3 +29,10 @@ fn _main2() {
         }
     });
 }
+
+fn _main3() {
+    let _greeting_file = File::open("hello.txt").unwrap();
+    
+    let _greeting_file2 = File::open("test.txt")
+        .expect("test.txt should be included in this project");
+}
