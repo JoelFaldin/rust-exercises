@@ -3,9 +3,18 @@ struct Point<T> {
     y: T,
 }
 
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
 fn main() {
     let _integer = Point { x: 5, y: 10 };
     let _float = Point { x: 1.0, y: 4.0 };
+
+    let p = Point { x: 5, y: 10 };
+    println!("p.x is {}", p.x());
 }
 
 struct Point_2<T, U> {
